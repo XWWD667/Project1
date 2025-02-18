@@ -19,8 +19,8 @@ public class ItemEditor : EditorWindow
         VisualElement root = rootVisualElement;
 
         // VisualElements objects can contain other VisualElement following a tree hierarchy.
-        VisualElement label = new Label("Hello World! From C#");
-        root.Add(label);
+        //VisualElement label = new Label("Hello World! From C#");
+        //root.Add(label);
 
         // Import UXML
         var visualTree = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Assets/Editor/Ui Builder/ItemEditor.uxml");
@@ -29,9 +29,9 @@ public class ItemEditor : EditorWindow
 
         // A stylesheet can be added to a VisualElement.
         // The style will be applied to the VisualElement and all of its children.
-        var styleSheet = AssetDatabase.LoadAssetAtPath<StyleSheet>("Assets/Editor/Ui Builder/ItemEditor.uss");
-        VisualElement labelWithStyle = new Label("Hello World! With Style");
-        labelWithStyle.styleSheets.Add(styleSheet);
-        root.Add(labelWithStyle);
+        //var styleSheet = AssetDatabase.LoadAssetAtPath<StyleSheet>("Assets/Editor/Ui Builder/ItemEditor.uss");
+        //VisualElement labelWithStyle = new Label("Hello World! With Style");
+        //labelWithStyle.styleSheets.Add(styleSheet);
+        //root.Add(labelWithStyle);
     }
 }
